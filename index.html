@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tennis Club Broc — Fondé en 1978 à Broc (FR), Suisse. 2 courts en gazon synthétique, cours adultes et juniors, inter-club.">
+  <meta property="og:title" content="Tennis Club Broc">
+  <meta property="og:description" content="Bienvenue au TC Broc — 2 courts en gazon synthétique au cœur des Préalpes fribourgeoises.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#E3BD00">
+  <title>Tennis Club Broc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav">
+      <a href="#accueil" class="nav-logo" aria-label="Tennis Club Broc — Accueil">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 60" aria-hidden="true">
+          <!-- C: orange circle rendered behind (visible as crescent to the right) -->
+          <circle cx="49" cy="30" r="21" fill="#D9470A"/>
+          <!-- T: gold ellipse rendered in front, creates the C crescent effect -->
+          <ellipse cx="25" cy="30" rx="23" ry="27" fill="#E3BD00"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-tennis">Tennis</span>
+          <span class="logo-club">Club Broc</span>
+        </span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#club" class="nav-link">Le Club</a></li>
+        <li><a href="#courts" class="nav-link">Nos Courts</a></li>
+        <li><a href="#cours" class="nav-link">Cours & Compétitions</a></li>
+        <li><a href="#comite" class="nav-link">Comité</a></li>
+        <li><a href="#inscription" class="nav-link">Inscription</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="accueil" class="section-hero">
+      <div class="hero-bg" style="background-image: url('image1000055.jpeg')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Fondé en 1978 · Broc, Fribourg</span>
+        <h1 class="hero-title">Tennis Club<br><em>Broc</em></h1>
+        <p class="hero-sub">2 courts en gazon synthétique au cœur des Préalpes fribourgeoises. Un club pour tous les âges, tous les niveaux.</p>
+        <div class="hero-actions">
+          <a href="#inscription" class="btn btn-primary">Devenir membre</a>
+          <a href="https://ballejaune.com/club/tcbroc" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Réserver un court
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+      </div>
+      <a href="#club" class="hero-scroll" aria-label="Défiler vers le bas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- ===================== LE CLUB ===================== -->
+    <section id="club" class="section section-club">
+      <div class="container">
+        <div class="split split--text-first">
+          <div class="split-text reveal">
+            <span class="section-tag">Depuis 1978</span>
+            <h2>Le Club</h2>
+            <p class="lead">Le Tennis Club Broc a été fondé en 1978 par Georges Furrer et quelques passionnés de tennis. En plus de 45 ans, il est devenu un pilier de la vie sportive de la région.</p>
+            <p>Nos installations, au sein du Complexe Sportif de la Plaine des Marches à Broc, comprennent deux courts en gazon synthétique avec sable céramique, éclairés, ainsi que des vestiaires à disposition des joueurs.</p>
+            <p>Affilié à Swiss Tennis, le TC Broc propose des activités pour tous les niveaux : cours pour débutants et confirmés, mouvement junior, équipes d'inter-club et tournois annuels.</p>
+          </div>
+          <div class="split-media reveal reveal--right">
+            <img src="image1000058.jpeg" alt="Vue aérienne du Complexe Sportif de la Plaine des Marches à Broc" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STAT STRIP ===================== -->
+    <div class="stat-strip" aria-label="Chiffres clés">
+      <div class="container">
+        <ul class="stats" role="list">
+          <li class="stat reveal">
+            <span class="stat-num">1978</span>
+            <span class="stat-label">Année de fondation</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Courts en gazon synthétique</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-num">+45</span>
+            <span class="stat-label">Années d'histoire</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-num">1636</span>
+            <span class="stat-label">Broc, Fribourg</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== NOS COURTS ===================== -->
+    <section id="courts" class="section section-courts">
+      <div class="container">
+        <div class="split split--media-first">
+          <div class="split-media reveal">
+            <img src="image1000065.jpeg" alt="Joueurs sur les courts du TC Broc avec l'église de Broc en arrière-plan" loading="lazy">
+          </div>
+          <div class="split-text reveal reveal--right">
+            <span class="section-tag">Infrastructures</span>
+            <h2>Nos Courts</h2>
+            <p class="lead">Deux courts en gazon synthétique avec sable céramique, éclairés, avec vue imprenable sur les Préalpes fribourgeoises. Un cadre exceptionnel pour jouer et progresser.</p>
+            <ul class="feature-list">
+              <li>2 courts en gazon synthétique avec sable céramique</li>
+              <li>Éclairage pour les parties en soirée</li>
+              <li>Vestiaires à disposition</li>
+              <li>Parking à disposition</li>
+              <li>Intégré au CSPM (Complexe Sportif Plaine des Marches)</li>
+            </ul>
+            <a href="https://ballejaune.com/club/tcbroc" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Réserver en ligne via Balle Jaune
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COURS & COMPÉTITIONS ===================== -->
+    <section id="cours" class="section section-cours">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Activités</span>
+          <h2>Cours & Compétitions</h2>
+          <p class="section-intro">Que vous soyez débutant ou joueur expérimenté, le TC Broc vous propose des activités adaptées à chaque âge et chaque niveau.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                <path d="M2 12h20"/>
+              </svg>
+            </div>
+            <h3>Cours Adultes</h3>
+            <p>Cours collectifs et individuels animés par des moniteurs diplômés Swiss Tennis. Du débutant au joueur avancé, progressez à votre rythme.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+                <path d="M12 8v4l3 3"/>
+              </svg>
+            </div>
+            <h3>Tennis Junior</h3>
+            <p>Le mouvement junior accueille les enfants dès 5 ans. Apprentissage ludique, progression technique et esprit d'équipe — les bases du jeu dans un cadre bienveillant.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>
+              </svg>
+            </div>
+            <h3>Inter-Club</h3>
+            <p>Le TC Broc engage des équipes dans les compétitions inter-club Swiss Tennis. Une opportunité de représenter le club et de mesurer son niveau face à d'autres équipes régionales.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 15l-2 5L9 9l11 4-5 2z"/>
+                <path d="M16.5 16.5l4.5 4.5"/>
+              </svg>
+            </div>
+            <h3>Tournois</h3>
+            <p>Tournois internes et manifestations annuelles ouverts à tous les membres. Des rencontres conviviales pour vibrer ensemble autour du tennis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMAGE BREAK ===================== -->
+    <div class="image-break" aria-hidden="true">
+      <img src="image1000059.jpeg" alt="">
+      <div class="image-break-overlay">
+        <blockquote>"Le tennis, un sport pour toute la vie."</blockquote>
+      </div>
+    </div>
+
+    <!-- ===================== COMITÉ ===================== -->
+    <section id="comite" class="section section-comite">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Gouvernance</span>
+          <h2>Le Comité</h2>
+          <p class="section-intro">Les membres du comité assurent bénévolement la gestion et le développement du club tout au long de l'année.</p>
+        </div>
+        <!-- Populated by js/main.js — see the `membres` array to update names, roles, emails and photos -->
+        <div class="comite-grid" id="comite-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== INSCRIPTION & TARIFS ===================== -->
+    <section id="inscription" class="section section-inscription">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Adhésion</span>
+          <h2>Inscription & Tarifs</h2>
+          <p class="section-intro">Rejoignez le TC Broc et profitez de l'ensemble de nos installations et activités. Les cotisations sont votées annuellement en assemblée générale.</p>
+        </div>
+        <div class="tarifs-grid">
+          <div class="tarif-card reveal">
+            <span class="tarif-cat">Adulte / Actif</span>
+            <div class="tarif-price">
+              <span class="tarif-amount">250</span>
+              <span class="tarif-period">CHF / an</span>
+            </div>
+            <ul class="tarif-list">
+              <li>Accès aux 2 courts</li>
+              <li>Participation aux tournois</li>
+              <li>Activités et soirées du club</li>
+              <li>Vote en assemblée générale</li>
+            </ul>
+          </div>
+          <div class="tarif-card tarif-card--highlight reveal">
+            <span class="tarif-cat">Couple</span>
+            <div class="tarif-price">
+              <span class="tarif-amount">400</span>
+              <span class="tarif-period">CHF / an</span>
+            </div>
+            <ul class="tarif-list">
+              <li>Tous les avantages adulte</li>
+              <li>Pour deux adultes du même foyer</li>
+              <li>Accès aux 2 courts</li>
+              <li>Vote en assemblée générale</li>
+            </ul>
+          </div>
+          <div class="tarif-card reveal">
+            <span class="tarif-cat">Junior ≤ 16 ans</span>
+            <div class="tarif-price">
+              <span class="tarif-amount">50</span>
+              <span class="tarif-period">CHF / an</span>
+            </div>
+            <ul class="tarif-list">
+              <li>Accès aux courts (accompagné)</li>
+              <li>Cours juniors encadrés</li>
+              <li>Tournois jeunes</li>
+              <li>Mouvement tennis junior</li>
+            </ul>
+          </div>
+          <div class="tarif-card reveal">
+            <span class="tarif-cat">Étudiant / Apprenti ≤ 25 ans</span>
+            <div class="tarif-price">
+              <span class="tarif-amount">180</span>
+              <span class="tarif-period">CHF / an</span>
+            </div>
+            <ul class="tarif-list">
+              <li>Accès aux 2 courts</li>
+              <li>Participation aux tournois</li>
+              <li>Activités du club</li>
+              <li>Justificatif requis</li>
+            </ul>
+          </div>
+          <div class="tarif-card reveal">
+            <span class="tarif-cat">Membre Passif</span>
+            <div class="tarif-price">
+              <span class="tarif-amount">20</span>
+              <span class="tarif-period">CHF / an</span>
+            </div>
+            <ul class="tarif-list">
+              <li>Soutien au club</li>
+              <li>Invitation aux événements</li>
+              <li>Bulletin d'information</li>
+            </ul>
+          </div>
+        </div>
+        <p class="tarifs-note reveal">
+          Cotisations annuelles votées en assemblée générale. Pour toute question, <a href="#contact">contactez-nous</a>.<br>
+          <a href="https://ballejaune.com/club/tcbroc" target="_blank" rel="noopener noreferrer">Réservation de courts via Balle Jaune →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== ACTUALITÉS / RÉSEAUX SOCIAUX ===================== -->
+    <section id="actualites" class="section section-actualites">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Actualités</span>
+          <h2>Suivez-nous</h2>
+          <p class="section-intro">Restez au courant des dernières nouvelles, résultats et événements du club.</p>
+        </div>
+
+        <!--
+          ╔══════════════════════════════════════════════════════════╗
+          ║           INTÉGRATION FLUX INSTAGRAM / SOCIAL           ║
+          ╠══════════════════════════════════════════════════════════╣
+          ║                                                          ║
+          ║  Option 1 — Elfsight (recommandée, gratuit jusqu'à      ║
+          ║  200 vues/mois) :                                        ║
+          ║  1. Créez un compte sur https://elfsight.com            ║
+          ║  2. Choisissez "Instagram Feed"                          ║
+          ║  3. Connectez votre compte Instagram                     ║
+          ║  4. Remplacez le div.social-placeholder par le code     ║
+          ║     <script> fourni + <div class="elfsight-app-...">    ║
+          ║                                                          ║
+          ║  Option 2 — SnapWidget (alternatif gratuit) :           ║
+          ║  https://snapwidget.com/                                 ║
+          ║                                                          ║
+          ║  Option 3 — Behold (propre, moderne, gratuit) :         ║
+          ║  https://behold.so/                                      ║
+          ║                                                          ║
+          ╚══════════════════════════════════════════════════════════╝
+        -->
+        <div class="social-placeholder reveal">
+          <div class="social-placeholder-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+            <p>Flux Instagram</p>
+            <span>Section prête — voir les instructions dans le code source (section #actualites)</span>
+          </div>
+        </div>
+
+        <div class="social-links reveal">
+          <!-- Mettez à jour ces liens avec vos vrais comptes -->
+          <a href="#" class="social-link" aria-label="Page Instagram du TC Broc">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Instagram
+          </a>
+          <a href="#" class="social-link" aria-label="Page Facebook du TC Broc">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="split split--contact">
+          <div class="contact-info reveal">
+            <span class="section-tag">Nous trouver</span>
+            <h2>Contact</h2>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-label">Adresse</span>
+                <address>
+                  Plaine des Marches<br>
+                  1636 Broc (FR)<br>
+                  Suisse
+                </address>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:administration@tcbroc.ch">administration@tcbroc.ch</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Réservation des courts</span>
+                <a href="https://ballejaune.com/club/tcbroc" target="_blank" rel="noopener noreferrer">
+                  ballejaune.com →
+                </a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Swiss Tennis</span>
+                <a href="https://www.swisstennis.ch" target="_blank" rel="noopener noreferrer">
+                  swisstennis.ch →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal reveal--right">
+            <!--
+              FORMSPREE — Configuration requise :
+              1. Créez un compte sur https://formspree.io
+              2. Créez un nouveau formulaire avec l'adresse administration@tcbroc.ch
+              3. Remplacez "VOTRE_ID_FORMSPREE" dans l'attribut action ci-dessous
+                 par votre ID de formulaire (ex: https://formspree.io/f/xyzabc)
+            -->
+            <form
+              action="https://formspree.io/f/VOTRE_ID_FORMSPREE"
+              method="POST"
+              id="contact-form"
+              class="contact-form"
+              novalidate
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="prenom">Prénom</label>
+                  <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom" name="nom" autocomplete="family-name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+              <div class="form-group">
+                <label for="sujet">Sujet</label>
+                <select id="sujet" name="sujet">
+                  <option value="">Choisir un sujet…</option>
+                  <option value="inscription">Inscription / Adhésion</option>
+                  <option value="cours">Cours de tennis</option>
+                  <option value="reservation">Réservation de court</option>
+                  <option value="interclub">Inter-Club</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn--full">Envoyer le message</button>
+              <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#accueil" class="nav-logo footer-logo" aria-label="Tennis Club Broc — Haut de page">
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 54" aria-hidden="true">
+              <circle cx="24" cy="27" r="23" fill="#E3BD00"/>
+              <circle cx="42" cy="27" r="18" fill="#D9470A"/>
+            </svg>
+            <span class="logo-text">
+              <span class="logo-tennis">Tennis</span>
+              <span class="logo-club">Club Broc</span>
+            </span>
+          </a>
+          <p class="footer-desc">Club de tennis fondé en 1978 à Broc, Fribourg. Deux courts en gazon synthétique, cours pour tous les niveaux, inter-club et tournois annuels.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navigation secondaire">
+          <h3>Navigation</h3>
+          <ul role="list">
+            <li><a href="#club">Le Club</a></li>
+            <li><a href="#courts">Nos Courts</a></li>
+            <li><a href="#cours">Cours & Compétitions</a></li>
+            <li><a href="#comite">Comité</a></li>
+            <li><a href="#inscription">Inscription & Tarifs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-nav">
+          <h3>Liens utiles</h3>
+          <ul role="list">
+            <li><a href="https://ballejaune.com/club/tcbroc" target="_blank" rel="noopener noreferrer">Réserver un court</a></li>
+            <li><a href="https://www.swisstennis.ch" target="_blank" rel="noopener noreferrer">Swiss Tennis</a></li>
+            <li><a href="mailto:administration@tcbroc.ch">administration@tcbroc.ch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2024</span> Tennis Club Broc — Plaine des Marches, 1636 Broc (FR), Suisse</p>
+        <p>Site réalisé bénévolement pour le club</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
