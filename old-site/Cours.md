@@ -16,6 +16,9 @@ Loisirs (6 -16 ans - groupe de 4) : 160.-
 Début des cours: Lundi 27 avril 2026
 Délai d'inscription: Vendredi 24 avril 2026
 
+Kids Day 2026 prévu débutera dès 13h30 le samedi 2 mai 2026, si la météo le permet.
+Le but étant de faire découvrire ce sport aux plus jeunes dans une ambiance conviviale.
+
 
 # Adulte
 
