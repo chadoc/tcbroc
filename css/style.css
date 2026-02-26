@@ -575,14 +575,96 @@ p {
 }
 
 /* ── SECTION BACKGROUNDS ─────────────────────────────────────── */
+/* Ordre: club(white) → courts(surface) → cours(white) → inscription(surface) → comite(white) */
 .section-club        { background: var(--white); }
 .section-courts      { background: var(--surface); }
-.section-reservation { background: var(--white); }
-.section-cours       { background: var(--surface); }
-.section-comite      { background: var(--white); }
+.section-cours       { background: var(--white); }
 .section-inscription { background: var(--surface); }
-.section-actualites  { background: var(--white); }
-.section-contact     { background: var(--surface); }
+.section-comite      { background: var(--white); }
+
+/* ── COURTS GRID (image + 2 cartes) ─────────────────────────── */
+.courts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .courts-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 1000px) {
+  .courts-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.courts-info-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.courts-info-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1000px) {
+  .courts-info-card img { height: clamp(160px, 18vw, 240px); }
+}
+
+.courts-features {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.courts-features li {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.courts-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Cartes réservation plus compactes dans la grille courts */
+.courts-grid .reservation-card {
+  padding: 1.5rem 1.25rem;
+  gap: 0.875rem;
+}
+
+.courts-grid .reservation-card h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.courts-grid .reservation-card p {
+  font-size: 0.875rem;
+}
+
+.courts-grid .reservation-card .btn {
+  padding: 0.6rem 1.1rem;
+  font-size: 0.875rem;
+}
 
 /* ── RÉSERVATION ─────────────────────────────────────────────── */
 .reservation-grid {
@@ -1066,15 +1148,20 @@ a.reservation-detail-value:hover {
 }
 
 /* ── CONTACT ─────────────────────────────────────────────────── */
-.contact-info h2 {
-  margin-block: 0.5rem 0;
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem 3rem;
+  max-width: 900px;
+  margin-inline: auto;
 }
 
-.contact-details {
-  margin-top: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+@media (min-width: 560px) {
+  .contact-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .contact-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 .contact-label {
@@ -1084,121 +1171,19 @@ a.reservation-detail-value:hover {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold-dark);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact-item address,
-.contact-item a,
-.contact-item p {
+.contact-item a {
   font-size: 0.9375rem;
   color: var(--ink-soft);
   max-width: none;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .contact-item a:hover {
   color: var(--orange);
-}
-
-/* Form wrapper */
-.contact-form-wrap {
-  background: var(--surface);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
-}
-
-@media (min-width: 600px) {
-  .contact-form-wrap { padding: 3rem 2.5rem; }
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.125rem;
-}
-
-.form-row {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 480px) {
-  .form-row { grid-template-columns: 1fr 1fr; }
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.375rem;
-}
-
-.form-group label {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--ink-soft);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  font-family: var(--font-body);
-  font-size: 0.9375rem;
-  color: var(--ink);
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.75rem 1rem;
-  outline: none;
-  transition: border-color var(--ease), box-shadow var(--ease);
-  width: 100%;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: var(--border);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--orange);
-  box-shadow: 0 0 0 3px rgba(217, 71, 10, 0.12);
-}
-
-.form-group select {
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B6B6B' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  cursor: pointer;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 130px;
-  line-height: 1.6;
-}
-
-.form-status {
-  font-size: 0.875rem;
-  text-align: center;
-  min-height: 1.5rem;
-  padding: 0.5rem 0;
-  border-radius: var(--radius);
-}
-
-.form-status.success {
-  color: #15803d;
-  background: #f0fdf4;
-  padding: 0.75rem;
-}
-
-.form-status.error {
-  color: #dc2626;
-  background: #fef2f2;
-  padding: 0.75rem;
 }
 
 /* ── FOOTER ──────────────────────────────────────────────────── */
@@ -1223,6 +1208,35 @@ a.reservation-detail-value:hover {
 .footer-logo {
   margin-bottom: 1.25rem;
   display: inline-flex;
+}
+
+.footer-brand-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: 1.5rem;
+}
+
+.footer-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.45);
+  transition: color var(--ease);
+  line-height: 1.4;
+}
+
+.footer-brand-link svg {
+  flex-shrink: 0;
+}
+
+.footer-brand-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-brand-link--ig:hover {
+  color: #e1306c;
 }
 
 .footer-desc {
