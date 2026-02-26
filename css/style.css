@@ -302,31 +302,15 @@ p {
   text-decoration: none;
 }
 
-.logo-icon {
-  width: 40px;
-  height: auto;
+.logo-img {
+  height: 42px;
+  width: auto;
+  display: block;
   flex-shrink: 0;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-display);
-  font-size: 0.8rem;
-  line-height: 1.15;
-  gap: 0;
-}
-
-.logo-tennis {
-  color: var(--gold-dark);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.logo-club {
-  color: var(--ink);
-  font-weight: 800;
-  letter-spacing: 0.01em;
+.logo-img--footer {
+  height: 60px;
 }
 
 /* Nav links */
@@ -593,11 +577,104 @@ p {
 /* ── SECTION BACKGROUNDS ─────────────────────────────────────── */
 .section-club        { background: var(--white); }
 .section-courts      { background: var(--surface); }
-.section-cours       { background: var(--white); }
-.section-comite      { background: var(--surface); }
-.section-inscription { background: var(--white); }
-.section-actualites  { background: var(--surface); }
-.section-contact     { background: var(--white); }
+.section-reservation { background: var(--white); }
+.section-cours       { background: var(--surface); }
+.section-comite      { background: var(--white); }
+.section-inscription { background: var(--surface); }
+.section-actualites  { background: var(--white); }
+.section-contact     { background: var(--surface); }
+
+/* ── RÉSERVATION ─────────────────────────────────────────────── */
+.reservation-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .reservation-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.reservation-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.reservation-card--alt {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--white);
+}
+
+.reservation-card--alt p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.reservation-card--alt h3 {
+  color: var(--white);
+}
+
+.reservation-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--orange);
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+}
+
+.reservation-badge--alt {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.reservation-card h3 {
+  margin: 0;
+}
+
+.reservation-card p {
+  font-size: 0.9375rem;
+  max-width: none;
+}
+
+.reservation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.reservation-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.reservation-detail-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.reservation-detail-value {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+a.reservation-detail-value:hover {
+  color: var(--gold);
+}
 
 /* ── FEATURE LIST ────────────────────────────────────────────── */
 .feature-list {
@@ -917,70 +994,75 @@ p {
 }
 
 /* ── ACTUALITÉS ──────────────────────────────────────────────── */
-.social-placeholder {
-  border: 2px dashed var(--border);
-  border-radius: var(--radius-lg);
-  padding: 4rem 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.social-placeholder-inner {
+.instagram-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  color: var(--border);
+  gap: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--ease), box-shadow var(--ease);
 }
 
-.social-placeholder-inner svg {
-  width: 42px;
-  height: 42px;
+.instagram-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
 }
 
-.social-placeholder-inner p {
-  font-weight: 600;
-  font-size: 1rem;
+.instagram-card-bg {
+  flex-shrink: 0;
+  width: 120px;
+  align-self: stretch;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 560px) {
+  .instagram-card-bg { width: 160px; }
+}
+
+.instagram-card-icon {
+  width: 48px;
+  height: 48px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.instagram-card-body {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  background: var(--white);
+}
+
+.instagram-handle {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  max-width: none;
+}
+
+.instagram-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9375rem;
   color: var(--muted);
   max-width: none;
 }
 
-.social-placeholder-inner span {
-  font-size: 0.8125rem;
-  color: var(--border);
-}
-
-.social-links {
-  display: flex;
-  gap: 0.875rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--ink-soft);
-  padding: 0.625rem 1.25rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--white);
-  transition: border-color var(--ease), color var(--ease), box-shadow var(--ease);
-}
-
-.social-link svg {
-  width: 18px;
-  height: 18px;
+.instagram-cta svg {
   flex-shrink: 0;
+  color: var(--orange);
+  transition: transform var(--ease);
 }
 
-.social-link:hover {
-  border-color: var(--ink);
-  color: var(--ink);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+.instagram-card:hover .instagram-cta svg {
+  transform: translate(3px, -3px);
 }
 
 /* ── CONTACT ─────────────────────────────────────────────────── */
@@ -1141,14 +1223,6 @@ p {
 .footer-logo {
   margin-bottom: 1.25rem;
   display: inline-flex;
-}
-
-.footer-logo .logo-tennis {
-  color: var(--gold);
-}
-
-.footer-logo .logo-club {
-  color: var(--white);
 }
 
 .footer-desc {

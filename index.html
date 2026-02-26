@@ -20,16 +20,7 @@
   <header class="site-header" id="site-header">
     <nav class="nav">
       <a href="#accueil" class="nav-logo" aria-label="Tennis Club Broc — Accueil">
-        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 60" aria-hidden="true">
-          <!-- C: orange circle rendered behind (visible as crescent to the right) -->
-          <circle cx="49" cy="30" r="21" fill="#D9470A"/>
-          <!-- T: gold ellipse rendered in front, creates the C crescent effect -->
-          <ellipse cx="25" cy="30" rx="23" ry="27" fill="#E3BD00"/>
-        </svg>
-        <span class="logo-text">
-          <span class="logo-tennis">Tennis</span>
-          <span class="logo-club">Club Broc</span>
-        </span>
+        <img src="logo/TCBroc_ligne_grand.jpg" alt="Tennis Club Broc" class="logo-img">
       </a>
 
       <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
@@ -41,6 +32,7 @@
       <ul class="nav-links" id="nav-links" role="list">
         <li><a href="#club" class="nav-link">Le Club</a></li>
         <li><a href="#courts" class="nav-link">Nos Courts</a></li>
+        <li><a href="#reservation" class="nav-link">Réservation</a></li>
         <li><a href="#cours" class="nav-link">Cours & Compétitions</a></li>
         <li><a href="#comite" class="nav-link">Comité</a></li>
         <li><a href="#inscription" class="nav-link">Inscription</a></li>
@@ -136,6 +128,50 @@
               Réserver en ligne via Balle Jaune
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RÉSERVATION ===================== -->
+    <section id="reservation" class="section section-reservation">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Accès aux courts</span>
+          <h2>Réserver un Court</h2>
+          <p class="section-intro">Que vous soyez membre ou visiteur, nos courts vous accueillent — sous réserve de disponibilité. Les membres restent prioritaires.</p>
+        </div>
+        <div class="reservation-grid">
+
+          <div class="reservation-card reveal">
+            <span class="reservation-badge">Membres</span>
+            <h3>Réservation en ligne</h3>
+            <p>Les membres du TC Broc réservent directement via la plateforme Balle Jaune. Vous y trouverez les créneaux disponibles et l'annuaire des joueurs pour trouver un partenaire de jeu.</p>
+            <a href="https://ballejaune.com/club/tcbroc" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Accéder à Balle Jaune
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+
+          <div class="reservation-card reservation-card--alt reveal">
+            <span class="reservation-badge reservation-badge--alt">Non-membres</span>
+            <h3>Réservation via la Piscine Communale</h3>
+            <p>Les personnes externes au club peuvent également louer un court. La réservation se fait par le biais de la Piscine Communale de Broc.</p>
+            <div class="reservation-details">
+              <div class="reservation-detail">
+                <span class="reservation-detail-label">Tarif</span>
+                <span class="reservation-detail-value">30.— CHF / heure</span>
+              </div>
+              <div class="reservation-detail">
+                <span class="reservation-detail-label">Téléphone</span>
+                <a href="tel:+41269211736" class="reservation-detail-value">026 921 17 36</a>
+              </div>
+              <div class="reservation-detail">
+                <span class="reservation-detail-label">Site web</span>
+                <a href="https://www.broc.ch/activites-et-tourisme/loisirs-et-sport/piscine-communale" target="_blank" rel="noopener noreferrer" class="reservation-detail-value">Piscine Communale de Broc →</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -304,50 +340,24 @@
           <p class="section-intro">Restez au courant des dernières nouvelles, résultats et événements du club.</p>
         </div>
 
-        <!--
-          ╔══════════════════════════════════════════════════════════╗
-          ║           INTÉGRATION FLUX INSTAGRAM / SOCIAL           ║
-          ╠══════════════════════════════════════════════════════════╣
-          ║                                                          ║
-          ║  Option 1 — Elfsight (recommandée, gratuit jusqu'à      ║
-          ║  200 vues/mois) :                                        ║
-          ║  1. Créez un compte sur https://elfsight.com            ║
-          ║  2. Choisissez "Instagram Feed"                          ║
-          ║  3. Connectez votre compte Instagram                     ║
-          ║  4. Remplacez le div.social-placeholder par le code     ║
-          ║     <script> fourni + <div class="elfsight-app-...">    ║
-          ║                                                          ║
-          ║  Option 2 — SnapWidget (alternatif gratuit) :           ║
-          ║  https://snapwidget.com/                                 ║
-          ║                                                          ║
-          ║  Option 3 — Behold (propre, moderne, gratuit) :         ║
-          ║  https://behold.so/                                      ║
-          ║                                                          ║
-          ╚══════════════════════════════════════════════════════════╝
-        -->
-        <div class="social-placeholder reveal">
-          <div class="social-placeholder-inner">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <circle cx="12" cy="12" r="4"/>
-              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
-            </svg>
-            <p>Flux Instagram</p>
-            <span>Section prête — voir les instructions dans le code source (section #actualites)</span>
+        <a
+          href="https://www.instagram.com/tcbroc/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="instagram-card reveal"
+          aria-label="Suivre le TC Broc sur Instagram"
+        >
+          <div class="instagram-card-bg" aria-hidden="true">
+            <svg class="instagram-card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </div>
-        </div>
-
-        <div class="social-links reveal">
-          <!-- Mettez à jour ces liens avec vos vrais comptes -->
-          <a href="#" class="social-link" aria-label="Page Instagram du TC Broc">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            Instagram
-          </a>
-          <a href="#" class="social-link" aria-label="Page Facebook du TC Broc">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            Facebook
-          </a>
-        </div>
+          <div class="instagram-card-body">
+            <p class="instagram-handle">@tcbroc</p>
+            <p class="instagram-cta">
+              Suivez les actualités, résultats et moments forts du club sur Instagram
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </p>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -446,14 +456,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <a href="#accueil" class="nav-logo footer-logo" aria-label="Tennis Club Broc — Haut de page">
-            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 54" aria-hidden="true">
-              <circle cx="24" cy="27" r="23" fill="#E3BD00"/>
-              <circle cx="42" cy="27" r="18" fill="#D9470A"/>
-            </svg>
-            <span class="logo-text">
-              <span class="logo-tennis">Tennis</span>
-              <span class="logo-club">Club Broc</span>
-            </span>
+            <img src="logo/TCBroc_2lgns_grand.jpg" alt="Tennis Club Broc" class="logo-img logo-img--footer">
           </a>
           <p class="footer-desc">Club de tennis fondé en 1978 à Broc, Fribourg. Deux courts en gazon synthétique, cours pour tous les niveaux, inter-club et tournois annuels.</p>
         </div>
@@ -462,6 +465,7 @@
           <ul role="list">
             <li><a href="#club">Le Club</a></li>
             <li><a href="#courts">Nos Courts</a></li>
+            <li><a href="#reservation">Réservation</a></li>
             <li><a href="#cours">Cours & Compétitions</a></li>
             <li><a href="#comite">Comité</a></li>
             <li><a href="#inscription">Inscription & Tarifs</a></li>

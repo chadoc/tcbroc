@@ -17,46 +17,53 @@
 ────────────────────────────────────────────────────────────── */
 const membres = [
   {
-    prenom: 'Prénom',      // TODO: compléter depuis tcbroc.ch/comite.html
-    nom: 'Nom',
+    prenom: 'Philippe',
+    nom: 'Sudan',
     role: 'Président',
     email: 'president@tcbroc.ch',
-    photo: null,
+    photo: 'comite/Philippe.jpeg',
   },
   {
-    prenom: 'Prénom',      // TODO: compléter
-    nom: 'Nom',
-    role: 'Vice-Président(e)',
-    email: 'vicepresident@tcbroc.ch',
-    photo: null,
-  },
-  {
-    prenom: 'Prénom',      // TODO: compléter
-    nom: 'Nom',
-    role: 'Trésorier(e)',
-    email: 'tresorier@tcbroc.ch',
-    photo: null,
+    prenom: 'Christian',
+    nom: 'Furrer',
+    role: 'Responsable Seniors',
+    email: 'seniors@tcbroc.ch',
+    photo: 'comite/Christian.JPG',
   },
   {
     prenom: 'Julien',
     nom: 'Repond',
     role: 'Secrétaire',
-    email: 'secretaire@tcbroc.ch',
-    photo: null,
+    email: 'administration@tcbroc.ch',
+    photo: 'comite/Julien.jpg',
+  },
+  {
+    prenom: 'Fabian',
+    nom: 'Niederhauser',
+    role: 'Responsable Site & Réservations',
+    email: 'infrastructure@tcbroc.ch',
+    photo: 'comite/Fabian.jpeg',
   },
   {
     prenom: 'Romain',
-    nom: 'de Flaugergue',
-    role: 'Responsable Juniors & Cours Juniors',
+    nom: 'de Flaugergues',
+    role: 'Responsable Cours Juniors',
     email: 'juniors@tcbroc.ch',
-    photo: null,
+    photo: 'comite/Romain.jpeg',
   },
   {
-    prenom: 'Prénom',      // TODO: compléter
-    nom: 'Nom',
-    role: 'Responsable Inter-Club',
-    email: 'interclub@tcbroc.ch',
-    photo: null,
+    prenom: 'François',
+    nom: 'Perritaz',
+    role: 'Responsable Tournoi & Manifestations',
+    email: 'manifestations@tcbroc.ch',
+    photo: 'comite/Francois.jpg',
+  },
+  {
+    prenom: 'Fabrice',
+    nom: 'Cretton',
+    role: 'Responsable Finances & Caisse',
+    email: 'finances@tcbroc.ch',
+    photo: 'comite/Fabrice.jpeg',
   },
 ];
 
