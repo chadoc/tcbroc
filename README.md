@@ -20,4 +20,4 @@ event.jpg pour l'illustrer.
 - remplacer le code postal de broc jaune avec le nombre de membre.
 - un lien pour que les gens suivent les actualités (ou prochain événement ou calendrier)
 
-- réservations. 
+- réservations.

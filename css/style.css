@@ -575,12 +575,14 @@ p {
 }
 
 /* ── SECTION BACKGROUNDS ─────────────────────────────────────── */
-/* Ordre: club(white) → courts(surface) → cours(white) → inscription(surface) → comite(white) */
-.section-club        { background: var(--white); }
-.section-courts      { background: var(--surface); }
-.section-cours       { background: var(--white); }
-.section-inscription { background: var(--surface); }
-.section-comite      { background: var(--white); }
+/* Ordre: club(white) → courts(surface) → cours(white) → competitions(surface) → events(white) → inscription(surface) → comite(white) */
+.section-club         { background: var(--white); }
+.section-courts       { background: var(--surface); }
+.section-cours        { background: var(--white); }
+.section-competitions { background: var(--surface); }
+.section-events       { background: var(--white); }
+.section-inscription  { background: var(--surface); }
+.section-comite       { background: var(--white); }
 
 /* ── COURTS GRID (image + 2 cartes) ─────────────────────────── */
 .courts-grid {
@@ -1333,4 +1335,254 @@ a.reservation-detail-value:hover {
   outline: 2px solid var(--orange);
   outline-offset: 3px;
   border-radius: 2px;
+}
+
+/* ── COURS ───────────────────────────────────────────────────── */
+.cours-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .cours-cards { grid-template-columns: 1fr 1fr; }
+}
+
+.cours-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cours-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cours-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--orange);
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+}
+
+.cours-badge--junior {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.cours-card p {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  max-width: none;
+}
+
+.cours-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  margin-top: auto;
+}
+
+.cours-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.cours-info-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cours-info-value {
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.cours-note {
+  font-size: 0.84rem;
+  color: var(--orange);
+  font-weight: 600;
+  max-width: none;
+}
+
+.cours-contact {
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+  margin-top: 0.5rem;
+  max-width: none;
+}
+
+.cours-contact a {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.cours-contact a:hover {
+  text-decoration: underline;
+}
+
+/* ── COMPÉTITIONS ────────────────────────────────────────────── */
+.competition-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .competition-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.competition-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: transform var(--ease), box-shadow var(--ease);
+}
+
+.competition-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.09);
+}
+
+.competition-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.competition-ligue {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--orange);
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+}
+
+.competition-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+}
+
+.competition-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.competition-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.competition-value {
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+a.competition-value:hover {
+  color: var(--orange);
+}
+
+.competition-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
+  margin-top: auto;
+}
+
+.competition-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--orange);
+  transition: color var(--ease);
+}
+
+.competition-link:hover {
+  color: var(--orange-dark);
+  text-decoration: underline;
+}
+
+/* ── EVENTS ──────────────────────────────────────────────────── */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.event-item {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+@media (max-width: 559px) {
+  .event-item {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}
+
+.event-date {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-top: 0.2rem;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.event-body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.event-body p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: none;
 }
