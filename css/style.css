@@ -266,11 +266,20 @@ p {
   inset-inline: 0;
   z-index: 200;
   height: var(--nav-h);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--ease), box-shadow var(--ease);
+}
+
+/* Le backdrop-filter est sur un ::before pour éviter qu'il crée
+   un containing block pour les enfants position:fixed (bug Safari) */
+.site-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid transparent;
-  transition: border-color var(--ease), box-shadow var(--ease);
+  z-index: -1;
 }
 
 .site-header.scrolled {
