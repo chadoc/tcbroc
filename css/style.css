@@ -922,6 +922,7 @@ a.reservation-detail-value:hover {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: top center;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .membre-avatar {
@@ -936,6 +937,12 @@ a.reservation-detail-value:hover {
   font-weight: 800;
   color: var(--border);
   user-select: none;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.membre-card:hover .membre-photo,
+.membre-card:hover .membre-avatar {
+  transform: scale(1.08) translateY(-5px);
 }
 
 .membre-info {
