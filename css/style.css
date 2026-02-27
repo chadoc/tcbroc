@@ -487,9 +487,13 @@ p {
 }
 
 .hero-title {
-  color: var(--white);
   margin-bottom: 1.25rem;
-  max-width: 13ch;
+}
+
+.hero-logo-title {
+  height: clamp(90px, 14vw, 170px);
+  width: auto;
+  display: block;
 }
 
 .hero-title em {
