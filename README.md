@@ -21,3 +21,8 @@ event.jpg pour l'illustrer.
 - un lien pour que les gens suivent les actualités (ou prochain événement ou calendrier)
 
 - réservations.
+
+J'aimerais que tu augments un peu la taille de la police pour les rôles des membres du comité. Et peux-tu changer
+la manière de highlighter les tiles: j'aimerais un effet de léger agrandisemment plutôt que juste une ombre. Et
+arrives-tu à créer un effet parallax sur l'image principale du haut du site. Dans le tile réservation pour les membres, peux-tu
+ajouter qu'il également possible de réserver avec un invité non-mmebres (nombre d'invitation limité par membre) au prix de 15.-/h.

@@ -439,12 +439,6 @@ p {
   background-size: cover;
   background-position: center 35%;
   will-change: transform;
-  animation: heroScale 10s ease-out forwards;
-}
-
-@keyframes heroScale {
-  from { transform: scale(1.06); }
-  to   { transform: scale(1); }
 }
 
 .hero-overlay {
@@ -760,6 +754,30 @@ a.reservation-detail-value:hover {
   color: var(--gold);
 }
 
+/* ── GUEST NOTE ──────────────────────────────────────────────── */
+.guest-note {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.875rem 1rem;
+}
+
+.guest-note-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 0.35rem;
+}
+
+.guest-note p {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  max-width: none;
+}
+
 /* ── FEATURE LIST ────────────────────────────────────────────── */
 .feature-list {
   display: flex;
@@ -811,8 +829,7 @@ a.reservation-detail-value:hover {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+  transform: scale(1.025);
   border-color: var(--gold);
 }
 
@@ -895,8 +912,7 @@ a.reservation-detail-value:hover {
 }
 
 .membre-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.1);
+  transform: scale(1.025);
 }
 
 .membre-photo {
@@ -926,7 +942,7 @@ a.reservation-detail-value:hover {
 
 .membre-role {
   display: block;
-  font-size: 0.68rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1466,8 +1482,7 @@ a.reservation-detail-value:hover {
 }
 
 .competition-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.09);
+  transform: scale(1.025);
 }
 
 .competition-card-top {

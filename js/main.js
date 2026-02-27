@@ -181,6 +181,33 @@ function initReveal() {
 }
 
 /* ──────────────────────────────────────────────────────────────
+   PARALLAX HERO
+────────────────────────────────────────────────────────────── */
+function initParallax() {
+  const heroBg = document.querySelector('.hero-bg');
+  if (!heroBg || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const heroSection = heroBg.closest('.section-hero');
+  let ticking = false;
+
+  const update = () => {
+    const scrollY = window.scrollY;
+    const heroH   = heroSection ? heroSection.offsetHeight : window.innerHeight;
+    if (scrollY < heroH) {
+      heroBg.style.transform = `translateY(${scrollY * 0.35}px)`;
+    }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+}
+
+/* ──────────────────────────────────────────────────────────────
    FORMULAIRE DE CONTACT (Formspree AJAX)
    Avant utilisation : remplacez "VOTRE_ID_FORMSPREE" dans index.html
    par votre identifiant Formspree (ex: xyzabc)
@@ -247,6 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Comportements UI
   initMobileMenu();
   initStickyHeader();
+  initParallax();
   initContactForm();
 
   // 3. Animations — après rendu du comité
