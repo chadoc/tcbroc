@@ -82,14 +82,14 @@ function renderComite() {
         : `<div class="membre-avatar" aria-hidden="true">${initiales}</div>`;
 
       return `
-        <article class="membre-card reveal">
+        <a class="membre-card reveal" href="mailto:${m.email}" aria-label="${m.prenom} ${m.nom} — ${m.role} — ${m.email}">
           ${photoEl}
           <div class="membre-info">
             <span class="membre-role">${m.role}</span>
             <p class="membre-name">${m.prenom} ${m.nom}</p>
-            <a class="membre-email" href="mailto:${m.email}">${m.email}</a>
+            <span class="membre-email">${m.email}</span>
           </div>
-        </article>
+        </a>
       `;
     })
     .join('');
