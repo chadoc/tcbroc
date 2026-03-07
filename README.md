@@ -26,3 +26,23 @@ J'aimerais que tu augments un peu la taille de la police pour les rôles des mem
 la manière de highlighter les tiles: j'aimerais un effet de léger agrandisemment plutôt que juste une ombre. Et
 arrives-tu à créer un effet parallax sur l'image principale du haut du site. Dans le tile réservation pour les membres, peux-tu
 ajouter qu'il également possible de réserver avec un invité non-mmebres (nombre d'invitation limité par membre) au prix de 15.-/h.
+
+
+
+J'eimerais que tu corriges, les locations pour les non membres, c'est du 1er avril jusqu'à la fin de la saison. La location peut se faire de 8h à 17h en fonction des slots disponibles.
+La réservation des locations se fait auprès de la piscine du 23 au mai au 13 septembre, sinon, auprès du restaurant l'Etoile D'or, il faut également ajouter le téléphone et le lien du restaurant.
+
+
+
+DNS:
+Type d'enregistrement : TLSA
+Nom de domaine :
+
+    _25._tcp.mail.tcbroc.ch.
+    _110._tcp.mail.tcbroc.ch.
+    _465._tcp.mail.tcbroc.ch.
+    _587._tcp.mail.tcbroc.ch.
+    _993._tcp.mail.tcbroc.ch.
+    _995._tcp.mail.tcbroc.ch.
+
+Enregistrement : 3 0 1 ba2a5963adf5d82f19ff094843ae5850de404e366cf264a0efb8d6a814224a17
