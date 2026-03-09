@@ -40,7 +40,7 @@ const membres = [
   {
     prenom: 'Romain',
     nom: 'de Flaugergues',
-    role: 'Responsable Cours Juniors',
+    role: 'Responsable Formation',
     email: 'juniors@tcbroc.ch',
     photo: 'comite/Romain.jpeg',
   },

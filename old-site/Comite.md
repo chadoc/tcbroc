@@ -20,7 +20,7 @@ Niederhauser Fabian
 	infrastructure@tcbroc.ch
 
 
-Responsable Cours Juniors & Juniors
+Repsonsable Formation
 Romain de Flaugergues
 	juniors@tcbroc.ch
 
