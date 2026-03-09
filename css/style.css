@@ -367,6 +367,23 @@ p {
   color: var(--orange);
 }
 
+.nav-mobile-actions {
+  display: none;
+  align-items: center;
+  gap: 0;
+}
+
+.nav-ig-mobile {
+  display: flex;
+  color: var(--ink-soft);
+  align-items: center;
+  padding: 0.4rem;
+}
+
+.nav-ig-mobile:hover {
+  color: var(--orange);
+}
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -438,10 +455,18 @@ p {
     margin-top: 0.75rem;
     padding: 1rem;
   }
+
+  .nav-link--ig {
+    display: none;
+  }
+
+  .nav-mobile-actions {
+    display: flex;
+  }
 }
 
 @media (min-width: 900px) {
-  .hamburger { display: none; }
+  .nav-mobile-actions { display: none; }
 }
 
 /* ── HERO ────────────────────────────────────────────────────── */
