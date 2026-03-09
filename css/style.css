@@ -1441,8 +1441,6 @@ a.reservation-detail-value:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  max-width: 900px;
-  margin-inline: auto;
 }
 
 @media (min-width: 768px) {
