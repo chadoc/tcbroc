@@ -24,32 +24,11 @@ const membres = [
     photo: 'comite/Philippe.jpeg',
   },
   {
-    prenom: 'Christian',
-    nom: 'Furrer',
-    role: 'Responsable Seniors',
-    email: 'seniors@tcbroc.ch',
-    photo: 'comite/Christian.jpeg',
-  },
-  {
-    prenom: 'Julien',
-    nom: 'Repond',
-    role: 'Secrétaire',
-    email: 'administration@tcbroc.ch',
-    photo: 'comite/Julien.jpg',
-  },
-  {
     prenom: 'Fabian',
     nom: 'Niederhauser',
     role: 'Responsable Site & Réservations',
     email: 'infrastructure@tcbroc.ch',
     photo: 'comite/Fabian.jpeg',
-  },
-  {
-    prenom: 'Romain',
-    nom: 'de Flaugergues',
-    role: 'Responsable Cours Juniors',
-    email: 'juniors@tcbroc.ch',
-    photo: 'comite/Romain.jpeg',
   },
   {
     prenom: 'François',
@@ -59,11 +38,32 @@ const membres = [
     photo: 'comite/Francois.jpg',
   },
   {
+    prenom: 'Romain',
+    nom: 'de Flaugergues',
+    role: 'Responsable Cours Juniors',
+    email: 'juniors@tcbroc.ch',
+    photo: 'comite/Romain.jpeg',
+  },
+  {
+    prenom: 'Christian',
+    nom: 'Furrer',
+    role: 'Responsable Seniors',
+    email: 'seniors@tcbroc.ch',
+    photo: 'comite/Christian.jpeg',
+  },
+  {
     prenom: 'Fabrice',
     nom: 'Cretton',
     role: 'Responsable Finances & Caisse',
     email: 'finances@tcbroc.ch',
     photo: 'comite/Fabrice.jpeg',
+  },
+  {
+    prenom: 'Julien',
+    nom: 'Repond',
+    role: 'Secrétaire',
+    email: 'administration@tcbroc.ch',
+    photo: 'comite/Julien.jpg',
   },
 ];
 
