@@ -21,7 +21,7 @@ const membres = [
     nom: 'Sudan',
     role: 'Président',
     email: 'president@tcbroc.ch',
-    photo: 'comite/Philippe.jpeg',
+    photo: 'comite/Philippe.png',
   },
   {
     prenom: 'Fabian',
