@@ -806,10 +806,7 @@ a.reservation-detail-value:hover {
 
 /* ── GUEST NOTE ──────────────────────────────────────────────── */
 .guest-note {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.875rem 1rem;
+  margin-top: 1rem;
 }
 
 .guest-note-label {
