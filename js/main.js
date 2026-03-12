@@ -49,7 +49,7 @@ const membres = [
     nom: 'Furrer',
     role: 'Responsable Seniors',
     email: 'seniors@tcbroc.ch',
-    photo: 'comite/Christian.png',
+    photo: 'comite/Christian.jpeg',
   },
   {
     prenom: 'Fabrice',
@@ -63,7 +63,7 @@ const membres = [
     nom: 'Repond',
     role: 'Secrétaire',
     email: 'administration@tcbroc.ch',
-    photo: 'comite/Julien.png',
+    photo: 'comite/Julien.jpg',
   },
 ];
 
