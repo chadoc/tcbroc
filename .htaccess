@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^inscription\.html$ /#inscription [R=301,L,NE]
