@@ -4,3 +4,8 @@ RewriteRule ^membres\.html$ / [R=301,L,NE]
 RewriteRule ^juniors\.html$ /#cours [R=301,L,NE]
 RewriteRule ^comite\.html$ /#comite [R=301,L,NE]
 RewriteRule ^location\.html$ /#courts [R=301,L,NE]
+
+# Redirection 404 → page d'accueil
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ / [R=302,L]
