@@ -1,2 +1,6 @@
 RewriteEngine On
 RewriteRule ^inscription\.html$ /#inscription [R=301,L,NE]
+RewriteRule ^membres\.html$ / [R=301,L,NE]
+RewriteRule ^juniors\.html$ /#cours [R=301,L,NE]
+RewriteRule ^comite\.html$ /#comite [R=301,L,NE]
+RewriteRule ^location\.html$ /#courts [R=301,L,NE]
