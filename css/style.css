@@ -1025,6 +1025,43 @@ a.reservation-detail-value:hover {
   color: var(--orange);
 }
 
+.membre-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  transition: color var(--ease);
+}
+
+.membre-card:hover .membre-phone {
+  color: var(--orange);
+}
+
+.membre-wa-link {
+  display: inline-flex;
+  align-items: center;
+  color: #25D366;
+  transition: color var(--ease);
+}
+
+.membre-wa-link:hover {
+  color: #128C7E;
+}
+
+.membre-tel-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.membre-tel-link:hover {
+  text-decoration: underline;
+}
+
+.wa-icon {
+  flex-shrink: 0;
+}
+
 /* ── TARIFS COMPACTS ─────────────────────────────────────────── */
 .tarifs-row {
   display: grid;
@@ -1544,6 +1581,22 @@ a.reservation-detail-value:hover {
 
 .cours-contact a:hover {
   text-decoration: underline;
+}
+
+.cours-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cours-phone .membre-wa-link {
+  color: #25D366;
+  text-decoration: none;
+}
+
+.cours-phone .membre-wa-link:hover {
+  color: #128C7E;
+  text-decoration: none;
 }
 
 /* ── COMPÉTITIONS ────────────────────────────────────────────── */
